@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #1a2535;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.container {
+  min-width: 300px;
+  max-width: 1200px;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.17);
+  background-image: linear-gradient(
+      167deg,
+      rgba(255, 255, 255, 0.814) 50%,
+      rgba(230, 233, 240, 0.682) 100%
+    ),
+    url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: o auto;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  background-color: #fbfbfb;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__wrapper {
+  background-color: #fbfbfbb6;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.main__company-name {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.main__logo {
+  display: block;
+  width: 150px;
+  margin: 30px auto 0;
+}
+
+.main__heading {
+  color: #1a2535;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main__heading--gap {
+  margin-bottom: 20px;
+}
+
+.main__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.main__socials {
+  margin-top: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+}
+
+.icon {
+  fill: rgba(0, 0, 0, 0.53);
+}
+
+.icon--social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #fbfbfb;
+  background-color: #1a2535;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon--social:hover {
+  fill: #ffffff;
+  background-image: linear-gradient(
+    to left bottom,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
